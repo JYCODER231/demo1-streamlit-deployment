@@ -1,5 +1,7 @@
 import streamlit as st
 import time
+import pandas as pd
+from numpy.random import default_rng as rng
 
 # Title
 st.title("Business Dashboard with Streamlit Layouts")
@@ -39,7 +41,7 @@ with tab2:
         "Quick delivery and excellent support."
     ]
     for idx,feedback in enumerate(customer_feedback):
-        st.write(f"{idx+1} {feedback}")
+        st.write(f"{idx+1}. {feedback}")
 with tab3:
     st.write("Content for Market Trends")
     market_trends = {
@@ -73,4 +75,12 @@ business_insights = [
 ]
 for insight in business_insights:
     placeholder.write(insight)
-    time.sleep(2)
+    time.sleep(2) #delay
+
+import pandas as pd
+import streamlit as st
+from numpy.random import default_rng as rng
+
+df = pd.DataFrame(rng(0).standard_normal((20, 3)), columns=["a", "b", "c"])
+#df stands for dataframe 2d data
+st.area_chart(df)
