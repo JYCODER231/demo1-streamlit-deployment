@@ -84,3 +84,12 @@ from numpy.random import default_rng as rng
 df = pd.DataFrame(rng(0).standard_normal((20, 3)), columns=["a", "b", "c"])
 #df stands for dataframe 2d data
 st.area_chart(df)
+
+option = st.selectbox(
+    "How would you like to be contacted?",
+    ["Email", #defalut one
+     "Home phone", 
+     "Mobile phone"],
+)
+
+st.write("You selected:", option)
