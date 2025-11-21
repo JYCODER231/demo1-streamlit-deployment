@@ -1,6 +1,6 @@
 import streamlit as st
 st.title("Business Dashboard with Streamlit Layouts")
-msg = "## Objective : To demenstrate the usage of column, tabs and dynamic
+msg = "## Objective : To demenstrate the usage of column, tabs and dynamic."
 st.write(msg)
 # Columns Layout
 col1, col2 = st.columns(2)
