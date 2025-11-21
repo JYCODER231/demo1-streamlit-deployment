@@ -38,8 +38,8 @@ with tab2:
         "Very satisfied with the product quality.",
         "Quick delivery and excellent support."
     ]
-    for feedback in customer_feedback:
-        st.write(f"- {feedback}")
+    for idx,feedback in enumerate(customer_feedback):
+        st.write(f"{idx+1} {feedback}")
 with tab3:
     st.write("Content for Market Trends")
     market_trends = {
@@ -60,7 +60,7 @@ placeholder = st.empty()
 # Simulate loading data and updating the placeholder
 for i in range(5):
     placeholder.write(f"Loading data... {i*20}% complete")
-    time.sleep(1)
+    time.sleep(1) #seems like loading but actually it is not
 
 # Once loading is complete, display the final message
 placeholder.write("Data loading complete. Displaying business insights.")
