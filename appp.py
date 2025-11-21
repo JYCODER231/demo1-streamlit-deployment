@@ -19,8 +19,8 @@ with tab1:
         "Q2 2024": "$1.5M",
         "Q3 2024": "$1.3M",
         "Q4 2024": "$1.6M"
-    }
-    for quarter, revenue in sales_data.items():
+    } #dictionary use .items()
+    for quarter, revenue in sales_data.items():#extract both value of key and value,Q12024 1.2m
         st.write(f"{quarter}: {revenue}")
 with tab2:
     st.write("Content for Customer Insights")
@@ -28,9 +28,12 @@ with tab2:
         "Great service!",
         "Very satisfied with the product quality.",
         "Quick delivery and excellent support."
-    ]
-    for feedback in customer_feedback:
-        st.write(f"- {feedback}")
+    ] #list
+  
+    
+    for idx, feedback in customer_feedback:
+        st.write(f"{idx+1}.- {feedback}")
+        
 with tab3:
     st.write("Content for Market Trends")
     market_trends = {
