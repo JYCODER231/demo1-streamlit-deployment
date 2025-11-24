@@ -9,7 +9,7 @@ with st.sidebar: #sidebar : create a new area on the lesft handside of the strea
         menu_title = "Menu",
         options = ["Home", "About", "Contact"],
         icons = ["house","cloud-upload","list-task"],#选项前的小图标
-        menu_icon= "emoji-sad-fill",
+        menu_icon= "emoji-smile-fill",
         default_index=0,
     )
 
