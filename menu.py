@@ -8,9 +8,7 @@ with st.sidebar: #sidebar : create a new area on the lesft handside of the strea
     selected=option_menu(
         menu_title = "Menu",
         options = ["Home", "About", "Contact"],
-        icons = ["House",
-                 "cloud-upload",
-                 "list-task"],
+        icons = ["house","cloud-upload","list-task"],#选项前的小图标
         menu_icon= "emoji-smile-fill",
         default_index=0,
     )
